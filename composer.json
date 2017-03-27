@@ -1,0 +1,19 @@
+{
+    "name": "root/website",
+    "description": "Projet DUT",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jerent Steeve",
+            "email": "jerent.steeve@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "require": {
+        "twig/twig": "^2.0"
+    }
+}
