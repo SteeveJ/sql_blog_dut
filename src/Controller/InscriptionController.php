@@ -13,7 +13,7 @@ class InscriptionController{
     }
     //Home Controller
     public function index(){
-        echo ($this->twig)->getPage('inscription.html');
+        echo ($this->twig)->getPage('inscription.html', ['name'=>'name']);
     }
 }
 

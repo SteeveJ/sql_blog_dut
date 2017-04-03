@@ -7,6 +7,8 @@ $router = new App\Router\Router($_GET['url']);
 
 // Url de l'accueil 
 $router->get('/', "Accueil#index");
+$router->get('/pagination-:pos', "Accueil#index");
+$router->get('/bytag/:id_tag/:pos', "Accueil#byTag");
 
 // Router page test
 $router->get('/topic/:slug-:id', function($slug, $id) use ($router){ echo $router->url('post', ['id' => 1,'slug' => "test"]); }, 'post');

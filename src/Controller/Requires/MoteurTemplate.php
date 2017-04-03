@@ -12,7 +12,7 @@ class Templates{
         $this->twig = new \Twig_Environment($this->loader);
     }
 
-    public function getPage($page){
-        return ($this->twig)->render($page);
+    public function getPage($page, $env = null){
+        return ($this->twig)->render($page, $env);
     }
 }
